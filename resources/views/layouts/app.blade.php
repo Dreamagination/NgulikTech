@@ -21,23 +21,23 @@
 </head>
 <body>
     <div id="app">
-      <nav class="nav has-shadow">
+      <nav class="navbar has-shadow">
         <div class="cotainer">
-          <div class="nav-left">
-            <a class="nav-item" href="{{route('home')}}">
+          <div class="navbar-left">
+            <a class="navbar-item" href="{{route('home')}}">
               <img src="{{asset('images/nguliktech-logo.png')}}" alt="NgulikTech Logo"/>
             </a>
-            <a href="#" class="nav-item is-tab is-hidden-mobile m-l-10">Learn</a>
-            <a href="#" class="nav-item is-tab is-hidden-mobile">Discuss</a>
-            <a href="#" class="nav-item is-tab is-hidden-mobile">Share</a>
+            <a href="#" class="navbar-item is-tab is-hidden-mobile m-l-10">Learn</a>
+            <a href="#" class="navbar-item is-tab is-hidden-mobile">Discuss</a>
+            <a href="#" class="navbar-item is-tab is-hidden-mobile">Share</a>
           </div>
 
           <div class="nav-right">
             @if (Auth::guest())
-              <a href="#" class="nav-item is-tab">Login</a>
-              <a href="#" class="nav-item is-tab">Join the Community</a>
+              <a href="#" class="navbar-item is-tab">Login</a>
+              <a href="#" class="navbar-item is-tab">Join the Community</a>
             @else
-              <button class="nav-item is-tab">
+              <button class="navbar-item is-tab">
                 Hey Admin <span class="icon"><i class="fa fa-caret-down"></i></span>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile</a></li>
